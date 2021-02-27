@@ -1,0 +1,15 @@
+@import "src/styles/variables";
+
+.app {
+  margin-top: $marginWrap;
+  display: grid;
+  grid-template-columns: $navWidth auto;
+  color: $white;
+  height: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  height: 100%;
+}
