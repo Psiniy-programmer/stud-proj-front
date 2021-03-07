@@ -22,6 +22,7 @@
 }
 
 .wtf {
+    font-size: 1.44em;
     margin-left: auto;
     margin-right: 10%;
 }
@@ -37,23 +38,24 @@
 }
 
 .footer {
+    font-size: 1.16em;
     text-align: center;
     margin: 0 10% 30px 10%;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (min-height: 470px) {
     .page {
         font-size: 12px;
     }
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 375px) and (min-height: 535px) {
     .page {
         font-size: 14px;
     }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 425px) and (min-height: 600px) {
     .page {
         font-size: 16px;
     }
@@ -64,19 +66,25 @@
     }
 }
 
-@media screen and (min-width: 768px) and (min-height: 800px) {
+@media screen and (min-width: 768px) {
+    .footer {
+        text-align: end;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 660px) {
     .page {
         font-size: 18px;
     }
 }
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1024px) and (min-height: 725px) {
     .page {
         font-size: 20px;
     }
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1440px) and (min-height: 885px) {
     .page {
         font-size: 25px;
     }
