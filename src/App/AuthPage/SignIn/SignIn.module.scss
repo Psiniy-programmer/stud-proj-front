@@ -1,0 +1,39 @@
+.heading {
+    font-size: 1.92em;
+    font-weight: 300;
+    width: fit-content;
+    margin: 2.48em auto .67em auto;
+}
+
+.login {
+    margin-bottom: 1.44em;
+
+    &::placeholder {
+        text-align: start;
+    }
+}
+
+.password {
+    &::placeholder {
+        text-align: start;
+    }
+}
+
+.forgotPassword {
+    display: block;
+    font-size: .76em;
+    line-height: 1;
+    text-align: end;
+    color: #090840;
+    margin-top: .79em;
+    margin-right: 7.68em;
+}
+
+.primaryButton {
+    margin-top: 1.24em;
+}
+
+.secondaryButton {
+    margin-top: 0.66em;
+    background-color: #D9E3EB;
+}
