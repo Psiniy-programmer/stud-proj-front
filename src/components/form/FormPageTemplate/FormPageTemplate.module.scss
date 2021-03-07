@@ -1,0 +1,84 @@
+.page { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #D9E3EB;
+    font-family: Monitorca;
+    font-size: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 3.84em;
+    height: 3.12em;
+    transform: scale(1.5);
+    margin-left: 2.5%;
+}
+
+.wtf {
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+.main {
+    width: 23em;
+    height: 27.28em;
+    margin: 30px auto;
+    background-color: #C6D7E0;
+    border-radius: 10.5% / 8.8%;
+    box-shadow: -10px -10px 20px rgba(255, 255, 255, .59), 
+        10px 10px 20px rgba(0, 0, 0, .22);
+}
+
+.footer {
+    text-align: center;
+    margin: 0 10% 30px 10%;
+}
+
+@media screen and (min-width: 320px) {
+    .page {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .page {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .page {
+        font-size: 16px;
+    }
+
+    .main {
+        box-shadow: -20px -20px 40px rgba(255, 255, 255, .59), 
+            20px 20px 40px rgba(0, 0, 0, .22);
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 800px) {
+    .page {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    .page {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .page {
+        font-size: 25px;
+    }
+}
+
