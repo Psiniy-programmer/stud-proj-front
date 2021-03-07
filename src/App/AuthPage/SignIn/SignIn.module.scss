@@ -1,3 +1,6 @@
+@import '@styles/input';
+@import '@styles/button';
+
 .heading {
     font-size: 1.92em;
     font-weight: 300;
@@ -6,6 +9,7 @@
 }
 
 .login {
+    @extend .input;
     margin-bottom: 1.44em;
 
     &::placeholder {
@@ -14,6 +18,8 @@
 }
 
 .password {
+    @extend .input;
+    
     &::placeholder {
         text-align: start;
     }
@@ -29,11 +35,12 @@
     margin-right: 7.68em;
 }
 
-.primaryButton {
+.signInButton {
+    @extend .primaryButton;
     margin-top: 1.24em;
 }
 
-.secondaryButton {
+.signUpButton {
+    @extend .secondaryButton;
     margin-top: 0.66em;
-    background-color: #D9E3EB;
 }
