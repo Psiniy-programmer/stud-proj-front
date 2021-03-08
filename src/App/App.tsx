@@ -1,8 +1,11 @@
 import React from 'react';
+import Profile from '@App/Profile/Profile';
+
 function App() {
     return (
-        <Profile />
-        <div className={'App'}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, saepe.</div>
+        <div className={'App'}>
+            <Profile/>
+        </div>
     );
 }
 
