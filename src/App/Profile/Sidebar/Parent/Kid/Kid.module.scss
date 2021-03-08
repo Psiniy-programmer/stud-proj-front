@@ -1,0 +1,39 @@
+.Kid {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  margin: 0 20px;
+  padding: 20px 20px;
+  border: solid #bfbfbf 1px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #bfbfbf;
+  font-size: 18px;
+
+}
+
+.kidName {
+  color: red;
+  overflow-wrap: break-word;
+}
+.teacherInfo {
+   display: flex;
+   gap: 10px;
+ }
+
+.teacher {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: blue;
+  font-family: 'Monitorica';
+}
+
+.teacherName {
+  display: flex;
+  justify-content: end;
+  color: #5CC1AC;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+

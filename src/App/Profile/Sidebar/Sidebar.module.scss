@@ -1,0 +1,40 @@
+@import 'src/styles/variables';
+
+$sidebarHeight: calc(100vh - 30px - 79px);
+
+.Sidebar {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  height: $sidebarHeight;
+  background-color: $backgroundColor;
+
+  h2 {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+}
+
+.edit {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  font-weight: 300;
+  gap: 5px;
+  margin-bottom: 45px;
+}
+
+.avatar {
+  margin: 0 auto 15px auto;
+  width: 180px;
+  height: 180px;
+}
+
+.edit__img {
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
