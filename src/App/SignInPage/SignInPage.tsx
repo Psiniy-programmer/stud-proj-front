@@ -5,7 +5,7 @@ import styles from './SignInPage.module.scss';
 function SignInPage() {
     return (
         <FormPageTemplate>
-            <h2 className={styles.heading}>Авторизация</h2>
+            <h1 className={styles.heading}>Авторизация</h1>
             <form>
                 <input aria-label="Логин" placeholder="Логин:" className={styles.login} />
                 <input aria-label="Пароль" placeholder="Пароль:" className={styles.password} />
