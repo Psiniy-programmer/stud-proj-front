@@ -1,13 +1,12 @@
 import React from 'react';
 import FormPageTemplate from '@components/form/FormPageTemplate';
-import SignUp from './SignUp';
 
-function AuthPage() {
+function SignUpPage() {
     return (
         <FormPageTemplate>
-            <SignUp />
+
         </FormPageTemplate>
     );
 }
 
-export default AuthPage;
+export default SignUpPage;

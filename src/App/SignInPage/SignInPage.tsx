@@ -1,9 +1,10 @@
 import React from 'react';
-import styles from './SignIn.module.scss';
+import FormPageTemplate from '@components/form/FormPageTemplate';
+import styles from './SignInPage.module.scss';
 
-function SignIn() {
+function SignInPage() {
     return (
-        <React.Fragment>
+        <FormPageTemplate>
             <h2 className={styles.heading}>Авторизация</h2>
             <form>
                 <input aria-label="Логин" placeholder="Логин:" className={styles.login} />
@@ -12,8 +13,8 @@ function SignIn() {
                 <button className={styles.signInButton}>Войти</button>
                 <button className={styles.signUpButton}>Создать аккаунт</button>
             </form>
-        </React.Fragment>
+        </FormPageTemplate>
     );
 }
 
-export default SignIn;
+export default SignInPage;
