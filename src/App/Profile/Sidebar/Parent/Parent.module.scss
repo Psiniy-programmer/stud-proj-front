@@ -4,7 +4,13 @@
   justify-content: center;
 }
 
-.kids {
+.kids__title {
   text-align: center;
   margin-bottom: 5px;
+}
+
+.kids {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

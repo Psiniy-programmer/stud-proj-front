@@ -6,8 +6,8 @@ $sidebarHeight: calc(100vh - 30px - 79px);
   padding-top: 30px;
   display: flex;
   flex-direction: column;
-  max-width: 300px;
-  height: $sidebarHeight;
+  max-width: 400px;
+  height: calc(100vh - 79px);
   background-color: $backgroundColor;
 
   h2 {
@@ -24,6 +24,7 @@ $sidebarHeight: calc(100vh - 30px - 79px);
   font-weight: 300;
   gap: 5px;
   margin-bottom: 45px;
+  margin-right: 20px;
 }
 
 .avatar {

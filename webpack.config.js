@@ -48,6 +48,7 @@ module.exports = {
     entry: ['@babel/polyfill', path.resolve(__dirname, 'src/index.tsx')],
     devtool: 'eval-source-map',
     output: {
+        publicPath: "",
         path:  path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     },

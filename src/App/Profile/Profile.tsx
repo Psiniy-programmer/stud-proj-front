@@ -2,13 +2,17 @@ import React from 'react';
 import styles from './Profile.module.scss';
 import Header from '@App/Profile/Header';
 import Sidebar from '@App/Profile/Sidebar';
+import Schedule from '@App/Profile/Content/Schedule';
 
 const Profile: React.FC = () => {
-    console.log(styles);
+
     return (
       <div className={styles.Profile}>
         <Header />
-        <Sidebar/>
+        <div className={styles.content}>
+            <Sidebar/>
+            <Schedule/>
+        </div>
       </div>
     );
 };

@@ -4,6 +4,7 @@ import styles from './Kid.module.scss';
 export interface KidProps {
     kid: string,
     teacher: string,
+    last?: boolean
 }
 
 const Kid = ({kid, teacher} : KidProps) => {

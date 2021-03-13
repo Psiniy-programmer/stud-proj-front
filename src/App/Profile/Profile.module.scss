@@ -1,3 +1,8 @@
 .Profile {
-  margin: 0 16px;
+  padding: unset;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
 }
