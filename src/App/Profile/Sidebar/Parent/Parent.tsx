@@ -4,25 +4,30 @@ import Kid from '@App/Profile/Sidebar/Parent/Kid';
 
 type kid = {
     name: string,
-    teacher: string
+    teacher: string,
+    id: number
 };
 
 const kids: kid[] = [
     {
         name: 'Петя',
-        teacher: 'Васяна Татьиновна'
+        teacher: 'Васяна Татьиновна',
+        id: 1
     },
     {
         name: 'Петя',
-        teacher: 'Васяна Татьиновна'
+        teacher: 'Васяна Татьиновна',
+        id: 2
     },
     {
         name: 'Петя',
-        teacher: 'Васяна Татьиновна'
+        teacher: 'Васяна Татьиновна',
+        id: 3
     },
     {
         name: 'Петя',
-        teacher: 'Васяна Татьиновна'
+        teacher: 'Васяна Татьиновна',
+        id: 4
     }
 ];
 
@@ -34,9 +39,9 @@ const Parent: React.FC = () => {
                 {
                     kids.map((kid, index) => {
                         if (index === kids.length - 1) {
-                            return <Kid key={kid.name} last={true} kid={kid.name} teacher={kid.teacher} />;
+                            return <Kid key={kid.id} last={true} kid={kid.name} teacher={kid.teacher} />;
                         } else {
-                            return <Kid key={kid.name} last={false} kid={kid.name} teacher={kid.teacher} />;
+                            return <Kid key={kid.id} last={false} kid={kid.name} teacher={kid.teacher} />;
                         }
                     })
                 }

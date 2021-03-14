@@ -5,7 +5,7 @@ import edit from './edit.svg';
 import Parent from '@App/Profile/Sidebar/Parent';
 
 const Sidebar: React.FC = () => {
-    console.log(styles);
+
     return (
     <div className={styles.Sidebar}>
         <h2>Василий Резнов</h2>
