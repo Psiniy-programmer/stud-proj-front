@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import MultiStepForm from '@components/forms/MultiStepForm';
 import FullNameForm from '@components/forms/FullNameForm';
 import ContactsForm from '@components/forms/ContactsForm';
 import PasswordForm from '@components/forms/PasswordForm';
@@ -7,27 +6,47 @@ import styles from './Parent.module.scss';
 
 function Parent() {
     const [step, setStep] = useState(0);
+    const [data, setData] = useState({});
 
-    const handleSubmit = () => {
+    const handleStep = (formData: object) => {
+        setData(value => Object.assign(value, formData));
+        setStep(value => value + 1);
+    };
+    const handleSubmit = (formData: object) => {
+        Object.assign(data, formData);
         // TODO
-    }
+    };
 
-    return (
-        <React.Fragment>
-            <h1 className={step === 2 ? styles.passwordHeading : styles.heading}>
-                Регистрация
-            </h1>
-            <MultiStepForm 
-                step={step} 
-                onNextStepClick={() => setStep(value => value + 1)} 
-                onSubmit={handleSubmit}
-            >
-                <FullNameForm />
-                <ContactsForm />
-                <PasswordForm />
-            </MultiStepForm>
-        </React.Fragment>
-    );
+    switch (step) {
+    default:
+    case 0:
+        return (
+            <React.Fragment>
+                <h1 className={styles.heading}>
+                    Регистрация
+                </h1>
+                <FullNameForm onSubmit={handleStep} />
+            </React.Fragment>
+        );
+    case 1:
+        return (
+            <React.Fragment>
+                <h1 className={styles.heading}>
+                    Регистрация
+                </h1>
+                <ContactsForm onSubmit={handleStep} />
+            </React.Fragment>
+        );
+    case 2:
+        return (
+            <React.Fragment>
+                <h1 className={styles.passwordHeading}>
+                    Регистрация
+                </h1>
+                <PasswordForm submitText="Создать аккаунт" onSubmit={handleSubmit} />
+            </React.Fragment>
+        );
+    }
 }
 
 export default Parent;
