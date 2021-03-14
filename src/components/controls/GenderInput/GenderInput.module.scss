@@ -1,0 +1,55 @@
+@import '@styles/input';
+
+.gender {
+    @extend .input;
+    position: relative;
+    color: #727272;
+}
+
+.legend {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    bottom: calc(50% - .52em);
+    left: 2.68rem;
+}
+
+.female {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 4.2rem;
+    margin-right: .6rem;
+}
+
+.male {
+    display: inline-flex;
+    align-items: center;
+}
+
+.radio {
+    display: inline;
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0 5px 0 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: .8rem;
+    height: .8rem;
+    border: 1px solid black;
+    border-radius: .16rem;
+}
+
+.radio::before {
+    content: "";
+    width: .4rem;
+    height: .4rem;
+    background-color: black;
+    border-radius: .08rem;
+    visibility: hidden;
+}
+
+.radio:checked::before {
+    visibility: visible;
+}
