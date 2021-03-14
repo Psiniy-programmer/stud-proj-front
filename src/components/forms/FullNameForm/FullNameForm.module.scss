@@ -1,0 +1,16 @@
+@import "@styles/input.scss";
+@import "@styles/button.scss";
+
+.field {
+    @extend .input;
+    margin-bottom: 1.44rem;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.submit {
+    @extend .primaryButton;
+    margin-top: 2rem;
+}
