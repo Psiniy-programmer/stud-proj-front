@@ -1,39 +1,30 @@
 @import "@styles/button";
 
 .headingIcon {
-    width: 10.2em;
-    height: 7.44em;
-    margin: 1.2em auto 0 auto;
-}
-
-.heading {
-    font-size: 1.92em;
-    font-weight: 300;
-    line-height: 1;
-    text-align: center;
+    width: 10.2rem;
+    height: 7.44rem;
+    margin: 1.2rem auto 0 auto;
 }
 
 .link {
     @extend .primaryButton;
-    padding-top: .17em;
-    padding-bottom: .17em;
-    margin-top: 1.24em;
-
-    &Text {
-        font-size: 1.38em;
-    }
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    margin-top: 1.44rem;
+    font-size: 1.6rem;
 }
 
 .goBack {
     display: flex;
     align-items: center;
     padding: 0;
-    margin: 3.96em 0 0 2.28em;
+    margin: 3.96rem 0 0 2.28rem;
     background: none;
     border: none;
+    line-height: 1;
 
     &Icon {
-        width: .96em;
-        height: .96em;
+        width: .96rem;
+        height: .96rem;
     }
 }

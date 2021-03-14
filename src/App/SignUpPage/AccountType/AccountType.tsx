@@ -11,7 +11,7 @@ function AccountType() {
     return (
         <React.Fragment>
             <img src={headingIcon} alt="Иконка" className={styles.headingIcon} />
-            <h1 className={styles.heading}>Создать аккаунт как:</h1>
+            <h1>Создать аккаунт как:</h1>
             <Link to={`${url}/parent`} className={styles.link}>
                 <span className={styles.linkText}>Родитель</span>
             </Link>
