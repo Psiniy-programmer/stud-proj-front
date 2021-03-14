@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './FormPageTemplate.module.scss';
 
 interface FormPageTemplateProps {
@@ -10,13 +11,13 @@ function FormPageTemplate({ children }: FormPageTemplateProps) {
         <div className={styles.page}>
             <header className={styles.header}>
                 <img className={styles.logo} src="https://logoipsum.com/logo/logo-4.svg" />
-                <span className={styles.wtf}>Главная</span>
+                <Link to="/TODO" className={styles.link}>Главная</Link>
             </header>
             <main className={styles.main}>
                 {children}
             </main>
             <footer className={styles.footer}>
-                <span>Нашли ошибку?</span>
+                <Link to="/TODO">Нашли ошибку?</Link>
             </footer>
         </div>
     );

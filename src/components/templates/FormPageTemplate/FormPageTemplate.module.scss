@@ -6,7 +6,6 @@
     min-height: 100vh;
     background-color: #D9E3EB;
     font-family: Monitorca;
-    font-size: 10px;
 }
 
 .header {
@@ -15,48 +14,61 @@
 }
 
 .logo {
-    width: 3.84em;
-    height: 3.12em;
+    width: 3.84rem;
+    height: 3.12rem;
     transform: scale(1.5);
     margin-left: 2.5%;
 }
 
-.wtf {
-    font-size: 1.44em;
+.link {
+    font-size: 1.44rem;
     margin-left: auto;
     margin-right: 10%;
 }
 
 .main {
-    width: 23em;
-    height: 27.28em;
+    width: 23rem;
+    height: 27.28rem;
     margin: 30px auto;
     background-color: #C6D7E0;
     border-radius: 10.5% / 8.8%;
     box-shadow: -10px -10px 20px rgba(255, 255, 255, .59), 
         10px 10px 20px rgba(0, 0, 0, .22);
+    
+    & > h1 {
+        font-size: 1.92rem;
+        font-weight: 300;
+        line-height: 1;
+        text-align: center;
+    }
 }
 
 .footer {
-    font-size: 1.16em;
+    font-size: 1.16rem;
     text-align: center;
     margin: 0 10% 30px 10%;
 }
 
+@media screen {
+    html {
+        font-size: 10px;
+    }
+}
+
 @media screen and (min-width: 320px) and (min-height: 470px) {
-    .page {
+    html {
         font-size: 12px;
     }
 }
 
 @media screen and (min-width: 375px) and (min-height: 535px) {
-    .page {
+    html {
         font-size: 14px;
     }
 }
 
 @media screen and (min-width: 425px) and (min-height: 600px) {
-    .page {
+    html {
         font-size: 16px;
     }
 
@@ -73,19 +85,19 @@
 }
 
 @media screen and (min-width: 768px) and (min-height: 660px) {
-    .page {
+    html {
         font-size: 18px;
     }
 }
 
 @media screen and (min-width: 1024px) and (min-height: 725px) {
-    .page {
+    html {
         font-size: 20px;
     }
 }
 
 @media screen and (min-width: 1440px) and (min-height: 885px) {
-    .page {
+    html {
         font-size: 25px;
     }
 }
