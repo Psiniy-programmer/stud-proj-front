@@ -2,16 +2,12 @@
 @import '@styles/button';
 
 .heading {
-    font-size: 1.92em;
-    font-weight: 300;
-    line-height: 1;
-    text-align: center;
-    margin: 2.48em 0 .67em 0;
+    margin: 4.76rem 0 1.28rem 0;
 }
 
 .login {
     @extend .input;
-    margin-bottom: 1.44em;
+    margin-bottom: 1.44rem;
 
     &::placeholder {
         text-align: start;
@@ -28,20 +24,20 @@
 
 .forgotPassword {
     display: block;
-    font-size: .76em;
+    font-size: .76rem;
     line-height: 1;
     text-align: end;
     color: #090840;
-    margin-top: .79em;
-    margin-right: 7.68em;
+    margin-top: .6rem;
+    margin-right: 5.84rem;
 }
 
 .signInButton {
     @extend .primaryButton;
-    margin-top: 1.24em;
+    margin-top: 1.44rem;
 }
 
 .signUpButton {
     @extend .secondaryButton;
-    margin-top: 0.66em;
+    margin-top: 0.76rem;
 }
