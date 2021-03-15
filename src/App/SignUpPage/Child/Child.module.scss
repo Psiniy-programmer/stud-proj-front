@@ -1,0 +1,40 @@
+@import "@styles/input.scss";
+@import "@styles/button.scss";
+
+.heading {
+    margin-top: 3.92rem;
+    margin-bottom: 1.2rem;
+}
+
+.field {
+    @extend .input;
+    margin-bottom: 1.44rem;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.password {
+    @extend .input;
+    margin-bottom: .2rem;
+}
+
+.passwordCaption {
+    display: block;
+    width: 14.24rem;
+    margin: 0 auto .6rem auto;
+    font-size: .8rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.confirmPassword {
+    @extend .input;
+    margin-bottom: 1.44rem;
+}
+
+.submit {
+    @extend .primaryButton;
+    margin-top: 2rem;
+}
