@@ -1,0 +1,30 @@
+@import '@styles/input.scss';
+
+.area {
+    @extend .input;
+    padding: .4rem .8rem;
+}
+
+.text {
+    width: 100%;
+    margin: .4rem 0 .2rem 0;
+    padding: 0;
+    background: none;
+    border: none;
+    overflow-y: hidden;
+    resize: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        text-align: center;
+        color: #727272;
+    }
+}
+
+.charCount {
+    font-size: .6rem;
+    text-align: right;
+}
