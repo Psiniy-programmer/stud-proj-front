@@ -1,0 +1,51 @@
+@import '@styles/input.scss';
+
+.dropdown {
+    color: #727272;
+    margin: 0 auto;
+    width: fit-content
+}
+
+.selectButton {
+    @extend .input;
+    width: 9.68rem;
+    color: inherit;
+    background-color: #D9E3EB;
+}
+
+.menu {
+    @extend .input;
+    width: 9.68rem;
+    color: inherit;
+    background-color: #E1EBF3; 
+    border: 1.5px solid #CBCBCB;
+    border-radius: .4rem; 
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.item {
+    padding: .5rem .4rem .5rem .4rem;
+    font-size: .8rem;
+    text-align: center;
+    border-bottom: 2px solid #CBCBCB;;
+
+    &:hover {
+        cursor: auto;
+    }
+
+    &:last-of-type {
+        border-bottom: none;
+    }
+}
+
+.highlightedItem {
+    @extend .item;
+    background-color: #D9E3EB;
+}
+
+.scrollbar {
+    max-height: 10.76rem;
+}
