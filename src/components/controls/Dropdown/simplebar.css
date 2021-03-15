@@ -1,0 +1,9 @@
+.simplebar-scrollbar::before {
+    background-color: #B6B6B6;
+    border-radius: 10px;
+}
+
+.simplebar-track.simplebar-vertical {
+    right: -8px;
+    width: 8px;
+}
