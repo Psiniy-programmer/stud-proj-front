@@ -4,34 +4,36 @@ import styles from './FilePicker.module.scss';
 interface FilePickerProps {
     label?: string;
     icon?: string;
+    ref?: React.LegacyRef<HTMLInputElement>;
     className?: string;
 }
 
-function FilePicker({ label, icon, className }: FilePickerProps) {
+function FilePicker({ label, icon, ref, className }: FilePickerProps) {
     const [filesCount, setFilesCount] = useState(0);
+
     const handleFilesChange = ((e: React.ChangeEvent<HTMLInputElement>) => {
         if (e.target.files) {
             setFilesCount(e.target.files.length);
         }
     });
-    let filesbarItems;
-    if (filesCount > 0) {
-        filesbarItems = [];
-        for (let i = 0; i < filesCount; i++) {
-            filesbarItems.push(<div className={styles.filesbarItem}></div>);
-        }
-    } else {
-        filesbarItems = false;
-    }
+
     return (
         <div className={`${styles.picker} ${className}`}>
             <label className={styles.label}>
                 {label}
-                {icon && <img src={icon} alt="Иконка" className={styles.icon}/>}
-                <input type="file" className={styles.input} onChange={handleFilesChange} multiple />
+                {icon && <img src={icon} alt="Иконка" className={styles.icon} />}
+                <input
+                    type="file"
+                    ref={ref}
+                    onChange={handleFilesChange}
+                    multiple
+                    className={styles.input}
+                />
             </label>
             <div className={styles.filesbar}>
-                {filesbarItems}
+                {filesCount > 0 && new Array(filesCount).fill(
+                    <div className={styles.filesbarItem} />
+                )}
             </div>
         </div>
     );
