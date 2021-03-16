@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import FullNameForm from '@components/forms/FullNameForm';
 import ContactsForm from '@components/forms/ContactsForm';
 import PasswordForm from '@components/forms/PasswordForm';
-import SpecializationForm from './SpecializationForm';
+import SpecialistForm from './SpecialistForm';
 import styles from './Specialist.module.scss';
 
 function Specialist() {
@@ -48,7 +48,7 @@ function Specialist() {
                 <h1 className={styles.confirmHeading}>
                     Информация для подтверждения профиля
                 </h1>
-                <SpecializationForm onSubmit={handleSubmit} />
+                <SpecialistForm onSubmit={handleSubmit} />
             </React.Fragment>
         );
     }
