@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import GenderInput from '@components/controls/GenderInput';
+import GenderInput, { Gender } from '@components/controls/GenderInput';
 import styles from './ContactsForm.module.scss';
 
 export interface Contacts {
@@ -15,7 +15,7 @@ interface ContactsFormProps {
 function ContactsForm({onSubmit}: ContactsFormProps) {
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
-    const [gender, setGender] = useState() as any;
+    const [gender, setGender] = useState<Gender>('male');
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -44,7 +44,7 @@ function ContactsForm({onSubmit}: ContactsFormProps) {
             />
             <GenderInput 
                 value={gender} 
-                onChange={(e) => setGender((e.target as any).value)} 
+                onChange={(e) => setGender(e.target.value as Gender)} 
             />
             <button className={styles.submit}>Далее</button>
         </form>
