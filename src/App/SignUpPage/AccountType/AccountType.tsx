@@ -15,10 +15,10 @@ function AccountType() {
             <Link to={`${url}/parent`} className={styles.link}>
                 <span className={styles.linkText}>Родитель</span>
             </Link>
-            <Link to={`${url}/child`} className={styles.link}>
+            <Link to={`${url}/specialist`} className={styles.link}>
                 <span className={styles.linkText}>Специалист</span>
             </Link>
-            <Link to={`${url}/specialist`} className={styles.link}>
+            <Link to={`${url}/child`} className={styles.link}>
                 <span className={styles.linkText}>Ребенок</span>
             </Link>
             <button onClick={() => history.goBack()} className={styles.goBack}>
