@@ -14,7 +14,10 @@ function TextArea({value, onChange, placeholder, ariaLabel, maxChars, className}
     const ref = useRef<HTMLTextAreaElement>(null);
 
     useEffect(() => {
-        const elem = ref.current as HTMLTextAreaElement;
+        const elem = ref.current;
+        if (!elem) {
+            return;
+        }
         elem.style.height = '0';
         elem.style.height = `${elem.scrollHeight}px`;
     }, [value]);
