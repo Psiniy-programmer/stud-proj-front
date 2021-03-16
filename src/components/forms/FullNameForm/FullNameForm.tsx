@@ -15,9 +15,14 @@ function FullNameForm({onSubmit}: FullNameFormProps) {
     const [name, setName] = useState('');
     const [surname, setSurname] = useState('');
     const [patronymic, setPatronymic] = useState(''); 
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        onSubmit({name, surname, patronymic});
+    };
     
     return (
-        <form onSubmit={() => onSubmit({name, surname, patronymic})}>
+        <form onSubmit={handleSubmit}>
             <input 
                 type="text"
                 name="name" 

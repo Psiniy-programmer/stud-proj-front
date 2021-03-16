@@ -14,8 +14,13 @@ function PasswordForm({ submitText, onSubmit }: PasswordFormProps) {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
 
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        onSubmit({password});
+    };
+
     return (
-        <form onSubmit={() => onSubmit({password})}>
+        <form onSubmit={handleSubmit}>
             <input 
                 type="password"
                 name="password"

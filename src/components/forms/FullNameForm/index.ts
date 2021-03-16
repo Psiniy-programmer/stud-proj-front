@@ -1,1 +1,1 @@
-export { default } from './FullNameForm';
+export { default, FullName } from './FullNameForm';

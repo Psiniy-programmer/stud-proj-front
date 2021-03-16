@@ -17,8 +17,13 @@ function ContactsForm({onSubmit}: ContactsFormProps) {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [gender, setGender] = useState() as any;
 
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        onSubmit({email, phoneNumber, gender});
+    };
+
     return (
-        <form onSubmit={() => onSubmit({email, phoneNumber, gender})}>
+        <form onSubmit={handleSubmit}>
             <input 
                 type="email"
                 name="email"
