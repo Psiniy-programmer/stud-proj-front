@@ -10,11 +10,12 @@ function Specialist() {
     const [data, setData] = useState({});
 
     const handleStep = (formData: object) => {
-        setData(value => Object.assign(value, formData));
+        setData(value => ({...value, ...formData}));
         setStep(value => value + 1);
     };
     const handleSubmit = (formData: object) => {
-        Object.assign(data, formData);
+        // @ts-ignore
+        const submitData = {...data, ...formData};
         // TODO
     };
 
