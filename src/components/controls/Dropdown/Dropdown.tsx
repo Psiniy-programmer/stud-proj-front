@@ -4,6 +4,7 @@ import SimpleBar from 'simplebar-react';
 import styles from './Dropdown.module.scss';
 import 'simplebar/src/simplebar.css';
 import './simplebar.css';
+import downArrow from './down-arrow.svg';
 
 interface DropdownProps {
     items: string[];
@@ -33,13 +34,15 @@ function Dropdown({
     });
 
     return (
-        <div className={`${styles.dropdown} ${className}`} aria-label={ariaLabel}>
+        <div className={`${styles.dropdown} ${className}`}>
             <button
                 className={styles.selectButton}
                 type='button'
+                aria-label={ariaLabel}
                 {...getToggleButtonProps()}
             >
-                {value || placeholder}
+                <span>{value || placeholder}</span>
+                <img src={downArrow} className={styles.selectButtonIcon} />
             </button>
             {isOpen && (
                 <SimpleBar className={styles.scrollbar}>
