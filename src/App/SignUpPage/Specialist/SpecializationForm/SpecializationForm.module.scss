@@ -1,0 +1,15 @@
+@import '@styles/button.scss';
+
+.aboutMe {
+    margin-bottom: 1.6rem;
+}
+
+.specialization {
+    margin-bottom: 1.6rem;
+}
+
+.submit {
+    @extend .primaryButton;
+    margin-top: 2rem;
+    margin-bottom: 2.6rem;
+}
