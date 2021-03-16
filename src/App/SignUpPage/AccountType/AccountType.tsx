@@ -23,7 +23,7 @@ function AccountType() {
             </Link>
             <button onClick={() => history.goBack()} className={styles.goBack}>
                 <img src={goBackIcon} alt="Иконка" className={styles.goBackIcon}/>
-                <span>Вернуться назад</span>
+                Вернуться назад
             </button>
         </React.Fragment>
     );
