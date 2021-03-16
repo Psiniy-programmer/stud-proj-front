@@ -27,7 +27,7 @@
     width: 100%;
     border: none;
     background: none;
-    height: 1000px;
+    height: 10.76rem;
 
     &:focus {
         outline: none;
@@ -49,14 +49,9 @@
     }
 }
 
-.highlightedItem {
-    @extend .item;
-    background-color: #D9E3EB;
-}
-
 .scrollbar {
     max-height: 10.76rem;
-    margin-top: 5px;
+    margin-top: 2px;
     border: 1.5px solid #CBCBCB;
     border-radius: .4rem;
     width: 9.68rem;

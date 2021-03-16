@@ -36,9 +36,9 @@ function Dropdown({
     return (
         <div className={`${styles.dropdown} ${className}`}>
             <button
-                className={styles.selectButton}
                 type='button'
                 aria-label={ariaLabel}
+                className={styles.selectButton}
                 {...getToggleButtonProps()}
             >
                 <span>{value || placeholder}</span>
@@ -49,11 +49,7 @@ function Dropdown({
                     <ul {...getMenuProps()} className={styles.menu}>
                         {items.map((item, index) => (
                             <li
-                                className={
-                                    value === item
-                                        ? styles.highlightedItem
-                                        : styles.item
-                                }
+                                className={styles.item}
                                 key={`${item}${index}`}
                                 {...getItemProps({ item, index })}
                             >
