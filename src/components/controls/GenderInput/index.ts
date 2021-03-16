@@ -1,1 +1,1 @@
-export { default } from './GenderInput';
+export { default, Gender } from './GenderInput';

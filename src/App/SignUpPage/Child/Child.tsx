@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import GenderInput from '@components/controls/GenderInput';
+import GenderInput, { Gender } from '@components/controls/GenderInput';
 import styles from './Child.module.scss';
 
 function Child() {
@@ -9,7 +9,7 @@ function Child() {
     const [parentsEmail, setParentsEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
-    const [gender, setGender] = useState();
+    const [gender, setGender] = useState<Gender>('male');
 
     const handleStep = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -83,7 +83,7 @@ function Child() {
                     />
                     <GenderInput 
                         value={gender} 
-                        onChange={(e) => setGender((e.target as any).value)}
+                        onChange={(e) => setGender(e.target.value as Gender)}
                     />
                     <button className={styles.submit}>
                         Создать аккаунт

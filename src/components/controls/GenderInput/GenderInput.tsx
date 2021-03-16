@@ -1,14 +1,17 @@
 import React from 'react';
 import styles from './GenderInput.module.scss';
 
+export type Gender = 'male' | 'female';
+
 interface GenderInputProps {
-    value?: 'male' | 'female';
-    onChange?: React.FormEventHandler<HTMLFieldSetElement>;
+    value?: Gender;
+    onChange?: React.ChangeEventHandler<HTMLInputElement>;
+    className?: string;
 }
 
-function GenderInput({ value, onChange }: GenderInputProps) {
+function GenderInput({ value, onChange, className }: GenderInputProps) {
     return (
-        <fieldset className={styles.gender} onChange={(onChange)}>
+        <fieldset className={`${styles.gender} ${className}`}>
             <legend className={styles.legend}>Пол</legend>
             <label className={styles.female}>
                 <input
@@ -17,6 +20,7 @@ function GenderInput({ value, onChange }: GenderInputProps) {
                     value="female"
                     checked={value === 'female'}
                     className={styles.radio}
+                    onChange={onChange}
                 />
                 Жен.
             </label>
@@ -27,6 +31,7 @@ function GenderInput({ value, onChange }: GenderInputProps) {
                     value="male"
                     checked={value === 'male'}
                     className={styles.radio}
+                    onChange={onChange}
                 />
                 Муж.
             </label>
