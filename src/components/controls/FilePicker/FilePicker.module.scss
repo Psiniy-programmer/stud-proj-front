@@ -1,0 +1,43 @@
+.picker {
+    margin: 0 auto;
+    width: 12.32rem;
+}
+
+.label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    width: 1.32rem;
+    margin-left: .2rem;
+}
+
+.input {
+    height: 0;
+    width: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+.filesbar {
+    display: flex;
+    width: 100%;
+    margin-top: .4rem;
+}
+
+.filesbarItem {
+    display: block;
+    flex-grow: 1;
+    max-width: 3.64rem;
+    height: .2rem;
+    background-color: #31B5C8;
+    border-radius: .2rem;
+    margin-right: .2rem;
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
