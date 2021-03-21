@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './Sidebar.module.scss';
+import styles from './Adult.module.scss';
 import placeholder from './test.jpg';
 import edit from './edit.svg';
-import Parent from '@App/Profile/Sidebar/Parent';
+import Parent from '@App/Profile/Sidebar/Adult/Parent';
 
-const Sidebar: React.FC = () => {
+const Adult: React.FC = () => {
 
     return (
     <div className={styles.Sidebar}>
@@ -19,4 +19,4 @@ const Sidebar: React.FC = () => {
     );
 };
 
-export default Sidebar;
+export default Adult;

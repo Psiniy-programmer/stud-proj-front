@@ -1,0 +1,15 @@
+@import 'src/styles/variables';
+
+.item {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 130px;
+  height: 130px;
+  background-color: $lightWhite;
+  padding: 10px;
+}
+
+.active {
+  background-color: $activeBlue;
+}

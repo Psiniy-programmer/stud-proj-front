@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Parent.module.scss';
-import Kid from '@App/Profile/Sidebar/Parent/Kid';
+import Kid from '@App/Profile/Sidebar/Adult/Parent/Kid';
 
 type kid = {
     name: string,

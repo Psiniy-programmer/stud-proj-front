@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Profile.module.scss';
 import Header from '@App/Profile/Header';
-import Sidebar from '@App/Profile/Sidebar';
-import Schedule from '@App/Profile/Content/Schedule';
+import Adult from '@App/Profile/Sidebar/Adult';
+import Schedule from '@App/Profile/Content/Adult/Schedule';
 
 const Profile: React.FC = () => {
 
@@ -10,7 +10,7 @@ const Profile: React.FC = () => {
       <div className={styles.Profile}>
         <Header />
         <div className={styles.content}>
-            <Sidebar/>
+            <Adult/>
             <Schedule/>
         </div>
       </div>

@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './Header.module.scss';
+import './Header.module.scss';
 
 const Header: React.FC = () => {
-    console.log(styles);
+
     return (
     <header>
         <img src="" alt="ЛОГО"/>
