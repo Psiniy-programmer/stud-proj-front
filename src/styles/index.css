@@ -88,11 +88,7 @@ select {
 }
 
 
-#root {
-  height: 100%;
-}
-
-html {
+#root, body, html, .App {
   height: 100%;
 }
 

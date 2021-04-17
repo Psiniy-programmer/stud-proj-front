@@ -11,7 +11,8 @@
   justify-content: center;
 }
 
-@mixin textHower {
-  transition: all 0.5s ease;
-  color: $yellow;
+@mixin sidebarTitles {
+  font-weight: 300;
+  font-size: 36px;
+  color: $textBlack;
 }

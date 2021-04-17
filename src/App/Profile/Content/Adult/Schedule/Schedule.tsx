@@ -15,6 +15,7 @@ type dayType = {
 
 const Schedule: React.FC = () => {
     const [appData, setAppData] = useState(moment());
+    const [activeDay, setActiveDay] = useState<number>(appData.date());
     const [calendar, setCalendar] = useState<dayType[]>([]);
     const nextMonth = useCallback(
         () => {
@@ -33,7 +34,7 @@ const Schedule: React.FC = () => {
     useEffect(() => {
         const startDay = appData.clone().startOf('month');
         const endDay = appData.clone().endOf('month');
-        const curDay = appData.date();
+
         const day = startDay;
         const days: dayType[] = [];
 
@@ -42,7 +43,7 @@ const Schedule: React.FC = () => {
                 {
                     number: day.date() as number,
                     weekDay: Days.Days[day.weekday() - 1],
-                    isActive: day.date() === curDay,
+                    isActive: day.date() === activeDay,
                 }
             );
 
@@ -50,12 +51,13 @@ const Schedule: React.FC = () => {
         }
 
         setCalendar(days);
-    }, [appData]);
+    }, [appData, activeDay]);
 
     const calendarRender = (): JSX.Element[] => {
 
         return calendar.map((day) => {
             return <Item
+                setActiveDay={setActiveDay}
                 isActive={day.isActive}
                 key={day.number}
                 weekDay={day.weekDay}

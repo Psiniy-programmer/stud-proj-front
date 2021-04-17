@@ -7,7 +7,7 @@ export interface KidProps {
     last?: boolean
 }
 
-const Kid = ({kid, teacher} : KidProps) => {
+const Kid = ({kid, teacher, last} : KidProps) => {
     return (
         <div className={styles.Kid}>
             <p className={styles.kidName}>{kid}</p>
@@ -15,6 +15,7 @@ const Kid = ({kid, teacher} : KidProps) => {
                 <p className={styles.teacher}>Учитель:</p>
                 <p className={styles.teacherName}>{teacher}</p>
             </div>
+          {last ? <div className={styles.plus}>+</div> : ''}
         </div>
     );
 };

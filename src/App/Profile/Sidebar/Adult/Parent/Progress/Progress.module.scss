@@ -1,0 +1,20 @@
+@import "src/styles/mixins";
+
+.Progress {
+  background-color: $backgroundColor;
+  height: 100%;
+
+  &Title {
+    @include sidebarTitles;
+    text-align: center;
+    margin-top: 45px;
+  }
+
+  &Bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25px;
+  }
+}

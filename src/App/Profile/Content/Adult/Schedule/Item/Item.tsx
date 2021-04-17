@@ -5,12 +5,15 @@ interface ItemProps {
     day: number,
     info?: string,
     weekDay: string,
-    isActive: boolean
+    isActive: boolean,
+    setActiveDay:  React.Dispatch<React.SetStateAction<number>>
 }
 
-const Item = ({day, weekDay, isActive}: ItemProps) => {
+const Item = ({ day, weekDay, isActive, setActiveDay}: ItemProps) => {
     return (
-        <div className={`${styles.item} ${isActive ? styles.active : ''}`}>
+        <div
+          onClick={() => setActiveDay(day)}
+          className={`${styles.item} ${isActive ? styles.active : ''}`}>
             <p>{day}</p>
             <p>{weekDay}</p>
         </div>

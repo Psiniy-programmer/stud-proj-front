@@ -1,32 +1,36 @@
 .Kid {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: row;
   gap: 20px;
   align-items: center;
-  margin: 0 20px;
+  margin-left: 20px;
+  margin-right: 10px;
   padding: 20px 20px;
   border: solid #bfbfbf 1px;
   border-radius: 10px;
   box-shadow: 3px 3px 10px #bfbfbf;
   font-size: 18px;
 
+  &Name {
+    color: red;
+    overflow-wrap: break-word;
+  }
 }
 
-.kidName {
-  color: red;
-  overflow-wrap: break-word;
-}
-.teacherInfo {
-   display: flex;
-   gap: 10px;
- }
 
 .teacher {
   display: flex;
   align-items: center;
   text-align: center;
   color: blue;
-  font-family: 'Monitorica';
+  font-family: 'Monitorica', sans-serif;
+
+  &Info{
+    display: flex;
+    gap: 10px;
+  }
 }
 
 .teacherName {
@@ -35,5 +39,24 @@
   color: #5CC1AC;
   overflow-wrap: break-word;
   text-align: center;
+}
+
+.plus {
+  width: 26px;
+  height: 26px;
+  font-family: 'Monitorica', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  color: #D9E3EB;
+  border: 1px solid #47A8C0;
+  border-radius: 20px;
+  position: absolute;
+  bottom: -10px;
+  right: -5px;
+  background-color: #47A8C0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 

@@ -15,9 +15,5 @@ nav {
 
   p {
     cursor: pointer;
-
-    &:hover {
-      @include textHower();
-    }
   }
 }
