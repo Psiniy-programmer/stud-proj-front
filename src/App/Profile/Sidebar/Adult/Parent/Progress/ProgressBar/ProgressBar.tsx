@@ -17,7 +17,7 @@ const ProgressBar = ({name, width}: ProgressBarProps) => {
       <p className={styles.barText}>
         {width}%
       </p>
-      <p>
+      <p className={styles.barName}>
         {name}
       </p>
     </div>

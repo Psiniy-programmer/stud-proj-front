@@ -1,0 +1,38 @@
+@import "src/styles/variables";
+
+.item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  width: 550px;
+  padding: 30px;
+  gap: 10px;
+  background-color: $backgroundColor;
+  border-radius: 100px;
+  cursor: pointer;
+
+  &Img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+  }
+
+  &Text {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+
+    &Name {
+      font-weight: 300;
+      font-size: 35px;
+      color: black;
+    }
+
+    &Last {
+      font-weight: 300;
+      font-size: 25px;
+      color: $gray;
+      width: 100%;
+    }
+  }
+}

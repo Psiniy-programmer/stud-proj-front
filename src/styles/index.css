@@ -1,6 +1,6 @@
 /*@font-face {*/
 /*  font-family: 'Monitorica';*/
-/*  src: url('./fonts/Monitorica.otf') format('otf');*/
+/*  src: url('fonts/Monitorica.otf') format('otf');*/
 /*}*/
 
 /*@font-face {*/
@@ -42,7 +42,8 @@ dd {
 /* Set core body defaults */
 body {
   margin: 0;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Monitorica", Monospaced, sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -99,4 +100,8 @@ button {
 a {
   text-decoration: none;
   color: unset;
+}
+
+* {
+  box-sizing: border-box;
 }

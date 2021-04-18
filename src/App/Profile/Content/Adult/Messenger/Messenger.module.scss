@@ -1,0 +1,26 @@
+.messenger {
+  margin-top: 60px;
+  width: 100%;
+
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+
+  &Subj {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-self: end;
+  }
+
+  &Other {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: start;
+    flex-direction: column;
+  }
+}

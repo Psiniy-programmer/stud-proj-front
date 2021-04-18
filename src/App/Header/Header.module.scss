@@ -1,0 +1,32 @@
+@import '../../styles/mixins';
+
+header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  background-image: url("backgroun.svg");
+
+  img {
+    width: 85px;
+    height: 85px;
+    cursor: pointer;
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 85px;
+  padding-right: 130px;
+
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+    cursor: pointer;
+  }
+}

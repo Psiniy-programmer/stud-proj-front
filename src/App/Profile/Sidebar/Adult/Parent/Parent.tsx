@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Parent.module.scss';
-import Kid from '@App/Profile/Sidebar/Adult/Parent/Kid';
+import Kid from '@App/Profile/Sidebar/Adult/Kid';
 import Progress from '@App/Profile/Sidebar/Adult/Parent/Progress';
 
 export type kid = {
@@ -18,23 +18,11 @@ const kids: kid[] = [
     progress: 30
   },
   {
-    name: 'Петя',
+    name: 'Дима',
     teacher: 'Васяна Татьиновна',
     id: 2,
     progress: 50
-  },
-  {
-    name: 'Петя',
-    teacher: 'Васяна Татьиновна',
-    id: 3,
-    progress: 40
-  }, {
-    name: 'Петя',
-    teacher: 'Васяна Татьиновна',
-    id: 4,
-    progress: 30
   }
-
 ];
 
 const Parent: React.FC = () => {
